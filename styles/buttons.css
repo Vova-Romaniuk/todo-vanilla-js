@@ -1,14 +1,58 @@
 .mark-as-done {
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
+	padding: 0 !important;
 	border-radius: 50%;
 	background: transparent;
-	border: 1px solid #ff5631;
+	border: 1px solid #ff5631 !important;
 }
 
 .unmark-as-done {
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
+	padding: 0 !important;
 	border-radius: 50%;
-	background: green;
+	background: rgb(10, 144, 10) !important;
+}
+
+#button-add-task {
+	height: 35px;
+	width: 35px;
+	font-size: 20px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: #ff5631;
+	outline: 0;
+	border: 0;
+}
+#button-add-task:hover {
+	background: #dd3e1c !important;
+	transition: 0.1s;
+}
+
+#tasks button {
+	background: transparent;
+	border: 0;
+	font-size: 20px;
+	color: inherit;
+	outline: 0;
+}
+
+.activate-button:hover {
+	color: #15803d !important;
+	transition: 0.1s;
+}
+.activate-button {
+	margin-right: 5px;
+	margin-left: auto;
+}
+.delete-button {
+	margin-right: 0px;
+}
+.delete-button:hover {
+	color: #7f1d1d !important;
+	transition: 0.1s;
 }

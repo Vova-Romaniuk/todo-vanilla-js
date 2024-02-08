@@ -1,4 +1,24 @@
+.input {
+	background: transparent;
+	border: 0;
+	outline: 0;
+	background: #1e1e1e;
+	height: 25px;
+	padding: 5px 20px;
+	border-radius: 40px;
+	color: #696057;
+	width: 65%;
+}
+.input::placeholder {
+	color: #696057;
+}
 .edit-input {
+	font-size: inherit;
+	color: inherit;
+}
+.edit-input::placeholder {
+	font-size: inherit;
+	color: inherit;
 }
 
 .line-through {

@@ -1,24 +1,24 @@
 const editInput = (id, value, isMarkDone) =>
-	`<input class='edit-input ${
+	`<input class='input edit-input  ${
 		isMarkDone && "line-through"
 	}' id='edit-input-${id}' value=${value} ${
 		!taskEditStates[id] && "readonly"
 	} required />`;
 
 const activateInputButton = (id, disabled = false) =>
-	`<button ${
+	`<button class='activate-button' ${
 		disabled ? "disabled" : ""
 	} id='activate-edit-mode-button-${id}' onclick="activateEditMode('${id}')">
 	<i class='fa-regular fa-pen-to-square'></i>
 </button>`;
 
 const saveButton = (id) =>
-	`<button id='save-button-${id}' onclick="editTask('${id}')">
+	`<button class='activate-button' id='save-button-${id}' onclick="editTask('${id}')">
 		<i class='fa-regular fa-check'></i>
 	</button>`;
 
 const deleteButton = (id) => `
-<button onclick="deleteTask('${id}')">
+<button class='delete-button' onclick="deleteTask('${id}')">
 				<i class='fa-solid fa-trash'></i>
 			</button>
 `;

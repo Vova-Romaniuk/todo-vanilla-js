@@ -11,14 +11,36 @@
 		/>
 	<link rel="stylesheet" href="./styles/buttons.css">
 	<link rel="stylesheet" href="./styles/input.css">
+	<link rel="stylesheet" href="./styles/global.css">
+	<link rel="stylesheet" href="./styles/todo.css">
+	<link rel="stylesheet" href="./styles/header-todo.css">
 </head>
 <body>
-	<form  onsubmit='addTask(event)' action="">
-		<input type="text" id='create-name-task' name="" id="" required>
-		<button type='submit'>+</button>
-	</form>
-	<div id="tasks">
-		<div class="task"></div>
+	<div class="container">
+		<div class="container-header-todo">
+			<div class="inner-container">
+				<div class="left-section">
+					<p class="title">Todo Done By Vovan</p>
+					<p class="subtitle">keep it up</p>
+				</div>
+				<div class="right-section">
+					<div class="task-count-container">
+						<span class="task-count">
+							5 / 10 
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<form  onsubmit='addTask(event)' action="">
+			<input class='input' type="text" id='create-name-task' placeholder='write your next task' name="" id="" required>
+			<button id='button-add-task' type='submit'>+</button>
+		</form>
+		<div class="container-tasks">
+		<div id="tasks">
+		</div>
+	</div>
 	</div>
 	<script src='./state.js'></script>
 	<script src='./elements.js'></script>
