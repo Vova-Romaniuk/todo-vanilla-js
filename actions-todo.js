@@ -18,13 +18,11 @@ const deleteTask = (id) => {
 
 const editTask = (id) => {
 	const inputEdit = document.getElementById(`edit-input-${id}`);
-	tasks = tasks.map((task) =>
-		task.id === id
-			? {
-					...task,
-					name: inputEdit.value,
-			  }
-			: task
-	);
+	const taskIndex = tasks.findIndex((task) => task.id === id);
+
+	if (taskIndex !== -1) {
+		tasks[taskIndex].name = inputEdit.value;
+	}
+
 	canselEditMode(id);
 };

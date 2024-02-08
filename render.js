@@ -1,6 +1,8 @@
 const renderTasks = () => {
 	const tasksContainer = document.getElementById("tasks");
 	tasksContainer.innerHTML = "";
+	renderTasksLength();
+	renderCompletedTaskCount;
 	tasks.map((task) => {
 		tasksContainer.innerHTML += `
 		<div class='task' id='${task.id}'>
@@ -19,4 +21,18 @@ const renderTasks = () => {
 		</div>`;
 	});
 	isTasksRender = true;
+};
+
+const renderTasksLength = () => {
+	const getTasksLengthSpan = document.getElementById("tasks-length");
+	getTasksLengthSpan.textContent = tasks.length;
+};
+
+const renderCompletedTaskCount = () => {
+	const getCompleteTaskCountSpan = document.getElementById(
+		"completed-task-count"
+	);
+	getCompleteTaskCountSpan.textContent = tasks.filter(
+		(task) => task.isDone
+	).length;
 };
