@@ -2,7 +2,6 @@ const renderTasks = () => {
 	const tasksContainer = document.getElementById("tasks");
 	tasksContainer.innerHTML = "";
 	renderTasksLength();
-	renderCompletedTaskCount;
 	tasks.map((task) => {
 		tasksContainer.innerHTML += `
 		<div class='task' id='${task.id}'>
