@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link
+			rel="stylesheet"
+			href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+		/>
+	<link rel="stylesheet" href="./styles/buttons.css">
+	<link rel="stylesheet" href="./styles/input.css">
+</head>
+<body>
+	<form  onsubmit='addTask(event)' action="">
+		<input type="text" id='create-name-task' name="" id="" required>
+		<button type='submit'>+</button>
+	</form>
+	<div id="tasks">
+		<div class="task"></div>
+	</div>
+	<script src='./state.js'></script>
+	<script src='./elements.js'></script>
+	<script src='./render.js'></script>
+	<script src='./editModeInput.js'></script>
+	<script src='./toggleDoneTask.js'></script>
+	<script src='./crud.js'></script>
+	<script src='./helpers.js'></script>
+</body>
+</html>
